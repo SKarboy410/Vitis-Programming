@@ -1,0 +1,24 @@
+# Vitis IDE
+_ide/
+
+# Build output
+build/
+
+# Language server
+compile_commands.json
+
+# Clang cache
+src/.cache/
+src/.clangd
+
+# Executables
+*.elf
+*.map
+*.log
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
