@@ -1,27 +1,17 @@
 #include "xil_printf.h"
 #include "sprite.h"
+#include "animation.h"
 
 
 int main(){
-    int x = 0;
-    int y = 10;
+    //animation_diagonal(TOP_LEFT_TO_BOTTOM_RIGHT, uint8_t 10, uint8_t 20);
 
-    sprite_enable();
-    
-    while(1){
-        sprite_setPos(x,y);
-        
-        x++;
-        y++;
-        
-        if(x>159)
-            x=0;
-        
-        if(x>119)
-            y=0;
-        
-        for (volatile int i = 0; i < 500000; i++);
+    //animation_bounce(MIX, uint8_t 80, uint8_t 60);
 
-    }
+    //animation_rectangle();
+
+    //animation_circle(uint8_t 80, uint8_t 60, uint8_t 10);
+
+    dvd_bounce(uint8_t 80, uint8_t 60);
     return 0;
 }   
